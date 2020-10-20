@@ -1,0 +1,158 @@
+:root {
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+  --DarkGrayishRed: hsl(0, 6%, 24%);
+  --linearFirst: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+
+  --linerSecound: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.container {
+  margin: 50px auto;
+  display: flex;
+  width: 90vw;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+.box-1 {
+  height: 700px;
+  background: url("images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover/contain;
+  padding-left: 80px;
+  flex-basis: 50%;
+}
+.logo {
+  margin-top: 50px;
+}
+h1 {
+  font-weight: 600;
+  margin-top: 120px;
+  font-size: 4rem;
+  letter-spacing: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+p {
+  padding-top: 20px;
+  width: 430px;
+  line-height: 20px;
+  color: hsl(0, 36%, 70%);
+}
+h1 .color {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  font-weight: 300;
+}
+#email {
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 90px 10px 10px;
+  border-radius: 50px;
+
+  border: 1px solid hsl(0, 4%, 66%);
+}
+input::placeholder {
+  text-align: left;
+}
+.subscribe__button {
+  position: relative;
+  top: 14px;
+  left: -35px;
+  width: 70px;
+  height: 40px;
+  background: url("../images/icon-arrow.svg") no-repeat center,
+    linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 10rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(206, 151, 151, 0.5);
+  box-shadow: 0 0.5rem 1rem rgba(206, 151, 151, 0.5);
+  cursor: pointer;
+}
+
+.subscribe__button:focus {
+  outline: none;
+  background: url("../images/icon-arrow.svg") no-repeat center,
+    linear-gradient(135deg, #fad2d2, #f0a8a8);
+}
+
+.subscribe__button:hover {
+  background: url("../images/icon-arrow.svg") no-repeat center,
+    linear-gradient(135deg, #fad2d2, #f0a8a8);
+}
+
+.subscribe__error-icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 410px;
+  top: 555px;
+
+  background: url("images/icon-error.svg") no-repeat;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.subscribe__info {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-size: 16px;
+  text-align: left;
+  color: #f96262;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.error .subscribe__email {
+  padding: 1.6rem 11rem 1.4rem 2.2rem;
+  border: 0.1rem solid #f96262;
+}
+
+.error .subscribe__error-icon {
+  visibility: visible;
+  opacity: 1;
+}
+
+.error .subscribe__info {
+  visibility: visible;
+  opacity: 1;
+}
+
+.success .subscribe__info {
+  visibility: visible;
+  opacity: 1;
+  color: #269426;
+}
+
+.box-2 {
+  flex-basis: 40%;
+  height: 700px;
+
+  background-image: url("images/hero-desktop.jpg");
+}
+
+img {
+  height: 700px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
